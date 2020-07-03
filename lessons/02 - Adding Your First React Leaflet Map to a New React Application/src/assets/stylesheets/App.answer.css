@@ -1,0 +1,25 @@
+/*
+  @lesson-02-answer Exercise 2
+  Adding a fixed size to our map helps Leaflet understand
+  where to render our map. Setting both the width and height
+  on our .leaflet-container to 100% allows us to expand the
+  map to all available space.
+*/
+
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+}
+
+/*
+  @lesson-02-answer Extra Credit
+  By adding a padding of 0 to the main tag within our
+  .page-search class, we're saying that the only time
+  we want to apply that rule is when a parent element
+  has a class of .page-search, rendering out to
+  .page-search main.
+*/
+
+main {
+  padding: 0;
+}
