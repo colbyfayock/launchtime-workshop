@@ -7,9 +7,15 @@
     "lesson:02": "yarn workspace launchtime-lesson-02 develop",
     "clean:node_modules": "find . -name node_modules -exec rm -rf {} \\;"
   },
-  "workspaces": [
-    "lessons/*"
-  ],
+  "workspaces": {
+    "packages": [
+      "lessons/*"
+    ],
+    "nohoist": [
+      "**/leaflet",
+      "**/react-leaflet"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/colbyfayock/launchtime-workshop"
