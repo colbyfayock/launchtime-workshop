@@ -1,0 +1,196 @@
+/* Warning: for the workshop, you shouldn't have to modify styles here */
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
+
+:root {
+  --launchtime-purple: #0121d8;
+  --launchtime-purple-dark: #011484;
+  --launchtime-cyan: #26c6da;
+  --blue-grey-50: #eceff1;
+  --blue-grey-100: #cfd8dc;
+  --blue-grey-200: #b0bec5;
+  --blue-grey-300: #90a4ae;
+  --blue-grey-400: #78909c;
+  --blue-grey-500: #607d8b;
+  --blue-grey-600: #546e7a;
+  --blue-grey-700: #455a64;
+  --blue-grey-800: #37474f;
+  --blue-grey-900: #263238;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  margin: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.wrapper {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+main {
+  padding: 2em 0;
+}
+
+/* ---------- */
+/* Components */
+/* ---------- */
+
+/* Button */
+
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  line-height: 1.4;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 1em 1.6em;
+  background-color: var(--blue-grey-800);
+  border: 0;
+  border-radius: .4em;
+  cursor: pointer;
+}
+
+.button-color-cyan {
+  background-color: var(--launchtime-cyan);
+}
+
+/* Container */
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container-content {
+  max-width: 60em;
+  padding: 0 1em;
+}
+
+/* Footer */
+
+footer {
+  width: 100%;
+  height: 2em;
+  line-height: 2em;
+  color: white;
+  text-align: center;
+  background-color: var(--launchtime-purple-dark);
+}
+
+footer p {
+  font-size: 1em;
+  margin: 0;
+}
+
+/* Header */
+
+.header {
+  width: 100%;
+  background-color: white;
+  border-bottom: solid 1px var(--launchtime-cyan);
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  height: 4em;
+  line-height: 4em;
+  padding: 0 1em;
+}
+
+.header a {
+  display: block;
+  text-decoration: none;
+}
+
+.header-logo {
+  font-size: 1.4em;
+}
+
+.header-logo,
+.header-logo a {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.header-account {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-avatar {
+  overflow: hidden;
+  width: 3em;
+  height: 3em;
+  background: var(--blue-grey-600);
+  background-size: cover;
+  background-position: center center;
+  border-radius: 100%;
+  margin: 0;
+  border: solid 2px var(--launchtime-purple);
+}
+
+.header-avatar img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Logo */
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  font-weight: bold;
+  margin: 0;
+}
+
+.logo,
+.logo a {
+  color: var(--launchtime-purple-dark);
+}
+
+.logo img {
+  display: block;
+  width: 1.6em;
+  height: auto;
+  margin-right: .5em;
+}
+
+/* ------- */
+/* Helpers */
+/* ------- */
+
+.text-center {
+  text-align: center;
+}
+
+.screen-reader-text,
+.visually-hidden,
+.ir {
+  overflow: hidden;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  margin: -1px;
+}
