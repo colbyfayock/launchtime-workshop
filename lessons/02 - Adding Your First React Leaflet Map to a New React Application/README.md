@@ -1,8 +1,11 @@
 # 📓 Lesson 02: Adding Your First React Leaflet Map to a New React Application
 
-We just installed all of our dependencies that will allow us to get started building a new map including [Leaflet](https://leafletjs.com/) and [React Leaflet](https://react-leaflet.js.org/). Now that we can actually add a map to our page, our new assignment is now to create that new map that takes up all of the space on the Search page. That way, all of our hungry customer can easily search the map for their favorite locations.
+We just learned about how maps can have huge impacts on people's lives. Inspiring? I sure think so!
+
+Now that we're ready, we're going to get started by installing our dependencies and actually add a map to our page. That way, all of our hungry customers can easily search the map for their favorite locations.
 
 ## Objectives
+* Install any needed dependencies for our map
 * Add a new Leaflet Map component to the Search page
 * Configure a TileLayer for a Map with OpenStreetMap
 * Make the map take up all of the space on the Search page
@@ -26,7 +29,7 @@ To get started, we need to install:
 * [Leaflet (leafletjs.com)](https://leafletjs.com/)
 * [React Leaflet (react-leaflet.js.org)](https://react-leaflet.js.org/)
 
-### 2. Adding a new map to the Search page
+### 2. Adding a new map to the page
 
 The first thing we need to do is actually add our map. We already installed our dependencies, so now it's a matter of using them to import our components.
 
