@@ -10,7 +10,6 @@ For our first lesson, we're going to briefly walk through how maps work and kick
 
 ## Objectives
 * Learn about mapping technologies like Leaflet
-* Prepare project by installing Leaflet
 
 ### 1. Mapping Overview
 
