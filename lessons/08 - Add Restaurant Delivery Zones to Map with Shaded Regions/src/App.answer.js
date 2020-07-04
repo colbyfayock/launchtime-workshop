@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import L from 'leaflet';
 import { Map, TileLayer } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
-import './assets/stylesheets/App.answer.css';
+import './assets/stylesheets/App.css';
 
 import Layout from './components/Layout';
 
@@ -41,18 +41,27 @@ function App() {
       };
     });
 
-    /**
-     * @lesson-07-answer
-     * We were able to use the onEachFeature option on the Leaflet GeoJSON
-     * instance add a custom function that lets us both create a new popup
-     * and bind it to our marker layer. We have to use an HTML string to
-     * do this as it's not interfacing directly with React
-     */
-
     const geoJson = new L.GeoJSON(locations, {
       onEachFeature: (feature = {}, layer) => {
-        const { properties = {} } = feature;
-        const { name, delivery, tags, phone, website } = properties;
+        /**
+         * @lesson-08-answer
+         * Now that we added our deliveryRadius to our GeoJSON locations, we
+         * can now access it on our map. Using that, we can create a Circle
+         * for each location that delivers and use mouseover and mouseout
+         * events to add those Circles to the map on hover.
+         */
+
+        const { properties = {}, geometry = {}  } = feature;
+        const { name, delivery, deliveryRadius, tags, phone, website } = properties;
+        const { coordinates } = geometry;
+
+        let deliveryZoneCircle;
+
+        if ( deliveryRadius ) {
+          deliveryZoneCircle = L.circle(coordinates.reverse(), {
+            radius: deliveryRadius
+          });
+        }
 
         const popup = L.popup();
 
@@ -79,6 +88,18 @@ function App() {
         popup.setContent(html)
 
         layer.bindPopup(popup);
+
+        layer.on('mouseover', () => {
+          if ( deliveryZoneCircle ) {
+            deliveryZoneCircle.addTo(map);
+          }
+        });
+
+        layer.on('mouseout', () => {
+          if ( deliveryZoneCircle ) {
+            deliveryZoneCircle.removeFrom(map);
+          }
+        });
       }
     });
 

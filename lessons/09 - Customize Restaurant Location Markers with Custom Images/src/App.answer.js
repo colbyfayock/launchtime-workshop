@@ -2,11 +2,21 @@ import React, { useEffect, useRef } from 'react';
 import L from 'leaflet';
 import { Map, TileLayer } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
-import './assets/stylesheets/App.answer.css';
+import './assets/stylesheets/App.css';
 
 import Layout from './components/Layout';
 
-import locations from './data/locations.answer';
+import locations from './data/locations';
+
+/**
+ * @lesson-09-answer
+ * We can import images just like any other file because our application
+ * is set up to handle them. We additionally can import an already existing
+ * marker image from Leaflet itself
+ */
+
+import utensilsIcon from './assets/shared/utensils-marker.png';
+import markerShadow from 'leaflet/dist/images/marker-shadow.png';
 
 const MAPBOX_API_KEY = process.env.REACT_APP_MAPBOX_API_KEY;
 const MAPBOX_USERID = process.env.REACT_APP_MAPBOX_USERID;
@@ -41,18 +51,39 @@ function App() {
       };
     });
 
-    /**
-     * @lesson-07-answer
-     * We were able to use the onEachFeature option on the Leaflet GeoJSON
-     * instance add a custom function that lets us both create a new popup
-     * and bind it to our marker layer. We have to use an HTML string to
-     * do this as it's not interfacing directly with React
-     */
-
     const geoJson = new L.GeoJSON(locations, {
+      /**
+       * @lesson-09-answer
+       * While we can get away with the default marker in most cases, sometimes
+       * having a visual indicator of what a marker means is important to
+       * differentiate it to other locations. We're able to replace our marker
+       * with a utensils icon so our visitors know it's a restaurant.
+       */
+
+      pointToLayer: (feature, latlng) => {
+        return L.marker(latlng, {
+          icon: new L.Icon({
+            iconUrl: utensilsIcon,
+            iconSize: [26, 26],
+            popupAnchor: [0, -15],
+            shadowUrl: markerShadow,
+            shadowAnchor: [13, 28],
+          })
+        });
+      },
+
       onEachFeature: (feature = {}, layer) => {
-        const { properties = {} } = feature;
-        const { name, delivery, tags, phone, website } = properties;
+        const { properties = {}, geometry = {}  } = feature;
+        const { name, delivery, deliveryRadius, tags, phone, website } = properties;
+        const { coordinates } = geometry;
+
+        let deliveryZoneCircle;
+
+        if ( deliveryRadius ) {
+          deliveryZoneCircle = L.circle(coordinates.reverse(), {
+            radius: deliveryRadius
+          });
+        }
 
         const popup = L.popup();
 
@@ -79,6 +110,18 @@ function App() {
         popup.setContent(html)
 
         layer.bindPopup(popup);
+
+        layer.on('mouseover', () => {
+          if ( deliveryZoneCircle ) {
+            deliveryZoneCircle.addTo(map);
+          }
+        });
+
+        layer.on('mouseout', () => {
+          if ( deliveryZoneCircle ) {
+            deliveryZoneCircle.removeFrom(map);
+          }
+        });
       }
     });
 

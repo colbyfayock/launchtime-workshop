@@ -6,7 +6,6 @@ We just installed all of our dependencies that will allow us to get started buil
 * Add a new Leaflet Map component to the Search page
 * Configure a TileLayer for a Map with OpenStreetMap
 * Make the map take up all of the space on the Search page
-* Prevent build errors when compiling project with Gatsby Plugin React Leaflet
 
 ## Exercise
 
@@ -14,7 +13,7 @@ We just installed all of our dependencies that will allow us to get started buil
 
 ### 1. Installing Our Dependencies
 
-While there are a few options for building maps, [Leaflet](https://leafletjs.com/) is the most popular. Lucky for us, Leaflet is also available as a ReactJS component library with [React Leaflet](https://react-leaflet.js.org/). We'll use both Leaflet and React Leaflet to build a map in our React-based Gatsby app.
+While there are a few options for building maps, [Leaflet](https://leafletjs.com/) is the most popular. Lucky for us, Leaflet is also available as a ReactJS component library with [React Leaflet](https://react-leaflet.js.org/). We'll use both Leaflet and React Leaflet to build a map in our React app.
 
 To get started, we need to install:
 * [Leaflet (npmjs.com)](https://www.npmjs.com/package/leaflet)

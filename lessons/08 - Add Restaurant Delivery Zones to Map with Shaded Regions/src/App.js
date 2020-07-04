@@ -2,11 +2,11 @@ import React, { useEffect, useRef } from 'react';
 import L from 'leaflet';
 import { Map, TileLayer } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
-import './assets/stylesheets/App.answer.css';
+import './assets/stylesheets/App.css';
 
 import Layout from './components/Layout';
 
-import locations from './data/locations.answer';
+import locations from './data/locations';
 
 const MAPBOX_API_KEY = process.env.REACT_APP_MAPBOX_API_KEY;
 const MAPBOX_USERID = process.env.REACT_APP_MAPBOX_USERID;
@@ -41,16 +41,15 @@ function App() {
       };
     });
 
-    /**
-     * @lesson-07-answer
-     * We were able to use the onEachFeature option on the Leaflet GeoJSON
-     * instance add a custom function that lets us both create a new popup
-     * and bind it to our marker layer. We have to use an HTML string to
-     * do this as it's not interfacing directly with React
-     */
-
     const geoJson = new L.GeoJSON(locations, {
       onEachFeature: (feature = {}, layer) => {
+        /**
+         * @lesson-08-todo
+         * Being able to access each feature gives us the ability to
+         * access all of the data that we've created in our GeoJSON
+         * file. How can we use it to show delivery zones on the map?
+         */
+
         const { properties = {} } = feature;
         const { name, delivery, tags, phone, website } = properties;
 

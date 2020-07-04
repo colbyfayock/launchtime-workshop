@@ -1,0 +1,34 @@
+{
+  "name": "launchtime-lesson-09",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "env-cmd": "^10.1.0",
+    "leaflet": "^1.6.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^6.1.0",
+    "react-leaflet": "^2.7.0",
+    "react-scripts": "3.4.1"
+  },
+  "scripts": {
+    "build": "env-cmd -f ../.env.shared react-scripts build",
+    "develop": "npm run start",
+    "start": "env-cmd -f ../.env.shared react-scripts start"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
