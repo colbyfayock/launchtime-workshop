@@ -64,7 +64,7 @@ Now that we have the last piece to our puzzle, our tile endpoint, we can configu
 We'll update our Map compopnent that we set up in the previous lesson to use our new Map Style.
 
 #### Where We'll Make Changes
-* `/src/pages/search.js`
+* `/src/App.js`
 
 #### Resources
 * [React Leaflet TileLayer (react-leaflet.js.org)](https://react-leaflet.js.org/docs/en/components#tilelayer)
@@ -80,7 +80,7 @@ Your first extra credit assignment is to go back to Mapbox and create a new Map 
 Once you create your new style, you can update your Search page basemap TileLayer to use that new style.
 
 #### Where We'll Make Changes
-* `/src/pages/search.js`
+* `/src/App.js`
 
 #### Resources
 * [Mapbox Studio](https://studio.mapbox.com/)
@@ -95,4 +95,4 @@ For this extra credit assignment, set up the TileLayer endpoint to use your Mapb
 
 #### Where We'll Make Changes
 * `/.env.development`
-* `/src/pages/search.js`
+* `/src/App.js`

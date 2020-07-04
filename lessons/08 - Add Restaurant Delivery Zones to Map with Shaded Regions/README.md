@@ -29,7 +29,7 @@ Now that we're setting our delivery radius, let's use it! We'll use that value t
 How can we use the delivery radius property to create a new Leaflet Circle shape?
 
 #### Where We'll Make Changes
-* `src/pages/search.js`
+* `src/App.js`
 
 #### Resources
 * [Leaflet Circle](https://leafletjs.com/reference-1.6.0.html#circle)
@@ -41,7 +41,7 @@ We were able to show all of our delivery zones, but it's a little overwhelming a
 How can we event handlers on our markers to show and hide the radius on hover?
 
 #### Where We'll Make Changes
-* `src/pages/search.js`
+* `src/App.js`
 
 #### Resources
 * [Leaflet Evented](https://leafletjs.com/reference-1.6.0.html#evented)
@@ -55,7 +55,7 @@ Just like we changed styles of our markers before, we can change the colors of s
 What properties can we use to configure our Circles that show the delivery zone to be a different color?
 
 #### Where We'll Make Changes
-* `src/pages/search.js`
+* `src/App.js`
 
 #### Resources
 * [Leaflet Circle Options](https://leafletjs.com/reference-1.6.0.html#circle-option)

@@ -26,7 +26,7 @@ Before we can add a marker to our map, we need a location! Our first step is goi
 Now that we have our location, we can add a marker to point that location out. To do this, we can use the React Leaflet Marker component which we'll import and add as a component to our page.
 
 #### Where We'll Make Changes
-* `/src/pages/search.js`
+* `/src/App.js`
 
 #### Resources
 * [React Leaflet Marker (react-leaflet.js.org)](https://react-leaflet.js.org/docs/en/components#marker)
@@ -38,7 +38,7 @@ Once we added the Marker, the first thing we noticed is it didn't work! 😱
 We can fix this though by overriding the library's default images with images imported straight from the library itself. It sound confusing, but we'll walk through this together and see it not working on the page.
 
 #### Where We'll Make Changes
-* `/src/pages/search.js`
+* `/src/App.js`
 
 #### Resources
 * [React Leaflet Github Issue (github.com)](https://github.com/PaulLeCam/react-leaflet/issues/453)
@@ -50,7 +50,7 @@ We now have a marker that shows our location, so let's add a name to it so anyon
 We'll be using the React Leaflet Popup component to attach this tooltip popup to our existing Marker component.
 
 #### Where We'll Make Changes
-* `/src/pages/search.js`
+* `/src/App.js`
 
 #### Resources
 * [React Leaflet Popup (react-leaflet.js.org)](https://react-leaflet.js.org/docs/en/components#popup)
@@ -64,7 +64,7 @@ We walked through adding a marker to our map, but more often than not, we have m
 Take this opportunity to add another marker that points to another location on the map. Customize a tooltip popup to provide information about that location.
 
 #### Where We'll Make Changes
-* `/src/pages/search.js`
+* `/src/App.js`
 
 #### Resources
 * [React Leaflet Marker (react-leaflet.js.org)](https://react-leaflet.js.org/docs/en/components#marker)

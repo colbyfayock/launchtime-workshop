@@ -20,7 +20,7 @@ To get started, we'll add a marker to a specific location to see how it relates 
 How can we use click events and the Leaflet API to add a marker to the map on click?
 
 #### Where We'll Make Changes
-* `/src/pages/search.js`
+* `/src/App.js`
 
 #### Resources
 * [Leaflet Marker](https://leafletjs.com/reference-1.6.0.html#marker)
@@ -33,7 +33,7 @@ Rather than setting a location manually, web browsers provide a way that we can 
 How can we use Leaflet's geolocation features to find where someone's located?
 
 #### Where We'll Make Changes
-* `/src/pages/search.js`
+* `/src/App.js`
 
 #### Resources
 * [Leaflet Map Geolocation Methods](https://leafletjs.com/reference-1.6.0.html#map-geolocation-methods)
@@ -45,7 +45,7 @@ While we were able to find our location, Leaflet's geolocation features don't se
 How can we use Leaflet's geolocation event handlers to add a marker to the map?
 
 #### Where We'll Make Changes
-* `/src/pages/search.js`
+* `/src/App.js`
 
 #### Resources
 * [Leaflet Map Location Events](https://leafletjs.com/reference-1.6.0.html#map-location-events)
@@ -58,7 +58,7 @@ Now that we can pinpoint our location, we noticed that it's not exactly the most
 How can we use the accuracy property to show the region where a browser is located?
 
 #### Where We'll Make Changes
-* `/src/pages/search.js`
+* `/src/App.js`
 
 #### Resources
 * [Leaflet Map Location Events](https://leafletjs.com/reference-1.6.0.html#map-location-events)
@@ -70,7 +70,7 @@ How can we use the accuracy property to show the region where a browser is locat
 
 
 #### Where We'll Make Changes
-* `src/pages/index.js`
+* `src/App.js`
 
 #### Resources
 * [Cleaning up an effect (reactjs.org)](https://reactjs.org/docs/hooks-reference.html#cleaning-up-an-effect)

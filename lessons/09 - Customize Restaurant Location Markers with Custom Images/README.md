@@ -20,7 +20,7 @@ Before we create a completely custom icon, we need to set up our GeoJSON configu
 What property lets us provide a custom function to create our own markers?
 
 #### Where We'll Make Changes
-* `src/pages/index.js`
+* `src/App.js`
 
 #### Resources
 * [Leaflet GeoJSON pointToLayer (leafletjs.com)](https://leafletjs.com/reference-1.6.0.html#geojson-pointtolayer)
@@ -37,7 +37,7 @@ src/assets/images/utensils-marker.png
 How can we replace the default markers with our custom image?
 
 #### Where We'll Make Changes
-* `src/pages/index.js`
+* `src/App.js`
 
 #### Resources
 * [Leaflet Marker (leafletjs.com)](https://leafletjs.com/reference-1.6.0.html#marker)
@@ -50,7 +50,7 @@ As we just noticed, we don't get the shadows to our markers by default. While we
 How can we use the original shadows and configure them to our markers?
 
 #### Where We'll Make Changes
-* `src/pages/index.js`
+* `src/App.js`
 
 ### Resources
 * [Leaflet Icon (leafletjs.com)](https://leafletjs.com/reference-1.6.0.html#icon)
@@ -64,8 +64,8 @@ Not only can we use the Leaflet Icon instance to add a custom image, we can crea
 For this extra credit, use a different Leaflet icon type called DivIcon to transform our markers into custom HTML, which you can then style with CSS.
 
 #### Where We'll Make Changes
-* `src/pages/index.js`
-* `src/assets/stylesheets/components/_map.scss`
+* `src/App.js`
+* `/src/assets/stylesheets/App.css`
 
 #### Resources
 * [Leaflet DivIcon (leafletjs.com)](https://leafletjs.com/reference-1.6.0.html#divicon)

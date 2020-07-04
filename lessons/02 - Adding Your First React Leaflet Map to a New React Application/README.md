@@ -37,8 +37,8 @@ There are 2 primary components that we'll need to use:
 We'll import these components from React Leaflet and use them to create our map.
 
 #### Where We'll Make Changes
-* `/src/pages/search.js`
-* `/src/assets/stylesheets/components/_maps.scss`
+* `/src/App.js`
+* `/src/assets/stylesheets/App.css`
 
 #### Resources
 * [React Leaflet Map (react-leaflet.js.org)](https://react-leaflet.js.org/docs/en/components#map)
@@ -49,4 +49,4 @@ We'll import these components from React Leaflet and use them to create our map.
 With our map rendered, we'll notice that there's a white border around the edge of our map. We want our custoemrs to be able to see a fullscreen look at the locations we have available, so we'll want to figure out a way to remove the extra space around our map.
 
 #### Where We'll Make Changes
-* `/src/assets/stylesheets/pages/_search.scss`
+* `/src/assets/stylesheets/App.css`

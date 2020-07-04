@@ -58,7 +58,7 @@ Success! We've imported our data and we're now ready to use it. Luckily, Leaflet
 So how can we add our GeoJSON data to the map?
 
 #### Where We'll Make Changes
-* `src/pages/search.js`
+* `src/App.js`
 
 #### Resources
 * [Leaflet GeoJSON (leafletjs.com)](https://leafletjs.com/reference-1.6.0.html#geojson)

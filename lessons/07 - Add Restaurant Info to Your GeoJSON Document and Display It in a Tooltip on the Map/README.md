@@ -33,7 +33,7 @@ With our data, we'll need a way to present it. Luckily, Leaflet's GeoJSON instan
 What Leaflet GeoJSON option can we use to add popups to our map?
 
 #### Where We'll Make Changes
-* `src/pages/index.js`
+* `src/App.js`
 
 #### Resources
 * [Leaflet GeoJSON onEachFeature (leafletjs.com)](https://leafletjs.com/reference-1.6.0.html#geojson-oneachfeature)
@@ -45,7 +45,7 @@ Now that we have our popups, we need to actually put some information in them!
 How can we add our restaurant info, like whether or not they deliver, to our popups.
 
 #### Where We'll Make Changes
-* `src/pages/index.js`
+* `src/App.js`
 
 #### Resources
 * [Leaflet GeoJSON Popup setContent (leafletjs.com)](https://leafletjs.com/reference-1.6.0.html#popup-setcontent)
@@ -57,7 +57,7 @@ We have our content! But the default styles aren't the greatest. It's a little h
 How can we use CSS to change our popup's appearance?
 
 #### Where We'll Make Changes
-* `src/assets/stylesheets/components/_map.scss
+* `/src/assets/stylesheets/App.css`
 
 ## Extra Credit
 
@@ -66,7 +66,7 @@ How can we use CSS to change our popup's appearance?
 We were able to tweak the styles to make the text look more readable, but we didn't do much else. This is your chance to go wild - you can update the background color, change the text color, or do something fancy!
 
 #### Where We'll Make Changes
-* `src/assets/stylesheets/components/_map.scss
+* `/src/assets/stylesheets/App.css`
 
 ### 2. Add another restaurant attribute
 
@@ -76,7 +76,7 @@ Create a new data attribute in our the properties of each location in our GeoJSO
 
 #### Where We'll Make Changes
 * `src/data/locations.json`
-* `src/pages/index.js`
+* `src/App.js`
 
 #### Resources
 * [GeoJSON Spec (geojson.org)](https://geojson.org/)

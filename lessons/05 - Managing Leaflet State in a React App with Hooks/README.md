@@ -18,7 +18,7 @@ How can we best manage state between all aspects of our map to take advantage of
 In order to access our Map instance, we need to use React's ref functionality. We'll start with React's useRef hook and use it to apply a ref to our map.
 
 #### Where We'll Make Changes
-* `/src/pages/search.js`
+* `/src/App.js`
 
 ### 2. Accessing our Leaflet Map instance inside a React useEffect hook
 
@@ -27,7 +27,7 @@ Once we have a ref set up, we gain the ability to access that ref within React's
 With this, we'll access the current value at the time the useEffect hook is ran.
 
 #### Where We'll Make Changes
-* `/src/pages/search.js`
+* `/src/App.js`
 
 ### 3. Use our Leaflet Map instance to re-add our Marker to the map
 
@@ -36,7 +36,7 @@ We now have the power of the Leaflet API to make changes to our Map instance. Wi
 We'll walk through accessing our Map instance from the ref in our useEffect hook and using it to recreate our marker on the map.
 
 #### Where We'll Make Changes
-* `/src/pages/search.js`
+* `/src/App.js`
 
 ### 4. Review a simple example of how mismanaging state can
 
@@ -45,7 +45,7 @@ So far, we haven't noticed any issues with map state, but that doesn't mean ther
 We'll walk through a quick demo to see how mismanging our state between our map and React can come back to bite us and add a technique for cleaning things up to avoid stale map data.
 
 #### Where We'll Make Changes
-* `/src/pages/search.js`
+* `/src/App.js`
 
 ## Extra Credit
 
@@ -54,4 +54,4 @@ We'll walk through a quick demo to see how mismanging our state between our map 
 In our previous lesson, we added a 2nd location to the map. Let's do this again but by using the Leaflet API within our useEffect hook.
 
 #### Where We'll Make Changes
-* `/src/pages/search.js`
+* `/src/App.js`
