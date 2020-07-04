@@ -1,0 +1,15 @@
+main {
+  padding: 0;
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+}
+
+/*
+  @lesson-07-todo
+  We only get so far with the default styles for our popup.
+  How can we add a few basic styles to make our popup
+  easier to read?
+*/

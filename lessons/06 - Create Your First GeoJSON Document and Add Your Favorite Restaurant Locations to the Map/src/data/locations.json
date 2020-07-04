@@ -1,0 +1,3 @@
+{
+  "@lesson-06-todo": "In order to store our location data, we'll want to use the GeoJSON format which is essentially a JSON file with a particular schema for geospatial data."
+}

@@ -1,0 +1,35 @@
+main {
+  padding: 0;
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+}
+
+/*
+  @lesson-07-answer
+  Because we added a class name of .restaurant-popup to our
+  HTML, we're now able to use CSS to apply any style we want.
+  That way, we can make the header and list elements a little
+  easier to read.
+*/
+
+.restaurant-popup h3 {
+  font-size: 1.4em;
+  margin-bottom: .4em;
+}
+
+.restaurant-popup ul {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.restaurant-popup li {
+  margin-bottom: .4em;
+}
+
+.restaurant-popup li:last-child {
+  margin-bottom: 0;
+}
