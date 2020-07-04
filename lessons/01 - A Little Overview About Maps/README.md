@@ -6,11 +6,10 @@ Mapping apps are an everyday tool we take for granted. They give us a ton of pow
 
 But there's a lot more to maps than driving directions! Scientists uses maps every day as a research tool to try to analyze patterns and make impactful decisions.
 
-For our first lesson, we're going to briefly walk through how maps work and kick off the workshop by installing the dependencies we'll need to build a map!
+For our first lesson, we're going to briefly walk through how maps work and kick off the workshop with some fun extra credit!
 
 ## Objectives
 * Learn about mapping technologies like Leaflet
-* Prepare project by installing Leaflet
 
 ### 1. Mapping Overview
 
