@@ -11,13 +11,14 @@ In this workshop, you'll learn the basics of mapping with [React Leaflet](https:
 Excited to learn? You should be! Here's some of the stuff we'll learn in this workshop:
 * Adding a new map to a React app with React Leaflet
 * Customize that map with a Mapbox basemap style
-* Use Leaflet's location API to find our locatoin
+* Learn about and create Geospatial data for restaurant info
 * Add restaurants to the map and see if they'll deliver to our location
+* Use Leaflet's location API to find our locatoin
 
 ## 👨‍🚀 Who Am I?
 I'm Colby Fayock! I've been working on mapping projects that put a user interface in front of big challenges that involve a lot of data like the imagery that comes from satellites and tools that help manage team resources for disaster relief. Working through these projects has made me passionate about the cool things we can do with maps to help others whether it's helping someone find their favorite restaurant or giving new tools to scientists around the world.
 
-Beyond the [video lessons I've worked on with Egghead](https://egghead.io/playlists/mapping-with-react-leaflet-e0e0?af=atzgap), I've written [a few](https://www.colbyfayock.com/2020/03/how-to-create-a-coronavirus-covid-19-dashboard-map-app-with-gatsby-and-leaflet) [tutorials](https://www.colbyfayock.com/2020/03/how-to-create-a-summer-road-trip-mapping-app-with-gatsby-and-leaflet/) and a [little bit of inspiration](https://www.colbyfayock.com/2020/03/anyone-can-map-inspiration-and-an-introduction-to-the-world-of-mapping/) for [getting started with maps](https://www.freecodecamp.org/news/easily-spin-up-a-mapping-app-in-react-with-leaflet/) along with a talk I gave at a few conferences called [Building Maps with Impact on React and the JAMstack](https://www.youtube.com/playlist?list=PLFsfg2xP7cbLuAglQob6zjS4nVbyAfSVV).
+Beyond the [video lessons I've worked on with Egghead](https://egghead.io/playlists/mapping-with-react-leaflet-e0e0?af=atzgap), I've written [a few](https://www.colbyfayock.com/2020/03/how-to-create-a-coronavirus-covid-19-dashboard-map-app-with-gatsby-and-leaflet) [tutorials](https://www.colbyfayock.com/2020/03/how-to-create-a-summer-road-trip-mapping-app-with-gatsby-and-leaflet/) and a [little bit of inspiration](https://www.colbyfayock.com/2020/03/anyone-can-map-inspiration-and-an-introduction-to-the-world-of-mapping/) for [getting started with maps](https://www.freecodecamp.org/news/easily-spin-up-a-mapping-app-in-react-with-leaflet/) along with some talks I gave at a few conferences [about mapping and the impact they have on our world](https://www.youtube.com/playlist?list=PLFsfg2xP7cbLuAglQob6zjS4nVbyAfSVV).
 
 You can also find me on Twitter at [@colbyfayock](https://twitter.com/colbyfayock)!
 
@@ -68,16 +69,14 @@ After all of the dependencies are installed for the lesson, you should be good t
 yarn develop # or npm run develop
 ```
 
-This should kick off a new server available at http://localhost:8000.
+This should kick off a new server available at http://localhost:3000 and most likely open that page for you.
 
 If you've successfully started up your development server, you should be ready to go for the workshop!
 
 ### What's In This Project?
-We'll start off with some tools that can help us focus on learning to work with maps. Those include:
-* [Create React App](https://create-react-app.dev/) - east to use framework that uses [React](https://reactjs.org/) that helps us quickly build a new website or application
-* [Sass](https://sass-lang.com/) - "CSS with superpowers" that allows us to easily maintain modular CSS stylesheets
+We'll start off our project with [Create React App](https://create-react-app.dev/) which will help us focus on learning to work with maps. CRA is an easy to use framework that uses [React](https://reactjs.org/) that helps us quickly build a new website or application.
 
-With these tools, we'll be able to dive right into building our map!
+I've also pre-configured some shared assets so that some of our changes can follow with us the entire way through the lessons.
 
 ### Installing and Using Zoom
 We'll be using [Zoom](https://zoom.us/) for the workshop. This is a great tool that helps give everyone the ability to interact with me as I work through the material with you.
