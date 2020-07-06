@@ -38,7 +38,7 @@ We'll walk through accessing our Map instance from the ref in our useEffect hook
 #### Where We'll Make Changes
 * `/src/App.js`
 
-### 4. Review a simple example of how mismanaging state can
+### 4. Review a simple example of mismanaged state
 
 So far, we haven't noticed any issues with map state, but that doesn't mean there aren't any issues!
 
