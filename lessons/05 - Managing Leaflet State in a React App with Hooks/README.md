@@ -26,6 +26,8 @@ Once we have a ref set up, we gain the ability to access that ref within React's
 
 With this, we'll access the current value at the time the useEffect hook is ran.
 
+You can test this out by using the `console.log` feature and verifying that when logging inside of `useEffect`, you'll see that your `ref` has a property of `current` with a value.
+
 #### Where We'll Make Changes
 * `/src/App.js`
 
