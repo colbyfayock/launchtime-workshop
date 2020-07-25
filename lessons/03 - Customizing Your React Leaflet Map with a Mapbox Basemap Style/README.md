@@ -54,11 +54,8 @@ While our API key is exposed when our page loads the map, we can configure our A
 
 To do this, we can use Create React Apps's built-in environment variable solution. You should be able to find an `.env.shared.sample` file that you can duplicate and remove `sample` from the name. You can then use this to fill in your details for the variables.
 
-For this extra credit assignment, set up the TileLayer endpoint to use your Mapbox API Key from an environment variable.
-
 #### Where We'll Make Changes
 * `lessons/.env.shared`
-* `/src/App.js`
 
 ### 5. Configuring a Mapbox Endpoint for our Map Style
 
@@ -96,3 +93,5 @@ Once you create your new style, you can update your Search page basemap TileLaye
 
 #### Resources
 * [Mapbox Studio](https://studio.mapbox.com/)
+
+### 2. xtra Env Vars
