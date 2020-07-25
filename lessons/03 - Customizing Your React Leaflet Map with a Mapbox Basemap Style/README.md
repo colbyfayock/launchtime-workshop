@@ -48,7 +48,19 @@ Mapbox gives you a default key, which is okay to use, but we're going to create 
 #### Resources
 * [Mapbox Account](https://account.mapbox.com/)
 
-### 4. Configuring a Mapbox Endpoint for our Map Style
+### 4. Create an Environment Variable for the API Key
+
+While our API key is exposed when our page loads the map, we can configure our API keys to have 1 for development that no one can ever see and one for production where we would restrict the URL to our app.
+
+To do this, we can use Create React Apps's built-in environment variable solution. You should be able to find an `.env.shared.sample` file that you can duplicate and remove `sample` from the name. You can then use this to fill in your details for the variables.
+
+For this extra credit assignment, set up the TileLayer endpoint to use your Mapbox API Key from an environment variable.
+
+#### Where We'll Make Changes
+* `lessons/.env.shared`
+* `/src/App.js`
+
+### 5. Configuring a Mapbox Endpoint for our Map Style
 
 We've set up the two most important parts of our Map Style, now we need to configure the URL that will allow us to use that Style!
 
@@ -57,7 +69,7 @@ Using our API Key, user ID, and Map Style ID, we'll create a tile endpoint that 
 #### Resources
 * [Mapbox Docs](https://docs.mapbox.com/api/maps/#static-tiles)
 
-### 5. Customizing Our Map with Our Map Style Endpoint
+### 6. Customizing Our Map with Our Map Style Endpoint
 
 Now that we have the last piece to our puzzle, our tile endpoint, we can configure out map to use it!
 
@@ -84,15 +96,3 @@ Once you create your new style, you can update your Search page basemap TileLaye
 
 #### Resources
 * [Mapbox Studio](https://studio.mapbox.com/)
-
-### 2. Create an Environment Variable for the API Key
-
-While our API key is exposed when our page loads the map, we can configure our API keys to have 1 for development that no one can ever see and one for production where we would restrict the URL to our app.
-
-To do this, we can use Create React Apps's built-in environment variable solution. You should be able to find an `.env.shared.sample` file that you can duplicate and remove `sample` from the name. You can then use this to fill in your details for the variables.
-
-For this extra credit assignment, set up the TileLayer endpoint to use your Mapbox API Key from an environment variable.
-
-#### Where We'll Make Changes
-* `lessons/.env.shared`
-* `/src/App.js`
