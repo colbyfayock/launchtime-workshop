@@ -73,14 +73,18 @@ Now that we have the last piece to our puzzle, our tile endpoint, we can configu
 We'll update our Map compopnent that we set up in the previous lesson to use our new Map Style.
 
 #### Where We'll Make Changes
-* `/src/App.js`
+* `lessons/.env.shared`
 
 #### Resources
 * [React Leaflet TileLayer (react-leaflet.js.org)](https://react-leaflet.js.org/docs/en/components#tilelayer)
 
 ## Extra Credit
 
-### 1. Create a New Basemap Style
+### 1. Extra Env Vars
+
+TODO
+
+### 2. Create a New Basemap Style
 
 Here's where you can go nuts!
 
@@ -93,5 +97,3 @@ Once you create your new style, you can update your Search page basemap TileLaye
 
 #### Resources
 * [Mapbox Studio](https://studio.mapbox.com/)
-
-### 2. xtra Env Vars
