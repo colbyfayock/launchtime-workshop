@@ -82,7 +82,13 @@ We'll update our Map compopnent that we set up in the previous lesson to use our
 
 ### 1. Extra Env Vars
 
-TODO
+Similar to [exercise 4](lessons/03%20-%20Customizing%20Your%20React%20Leaflet%20Map%20with%20a%20Mapbox%20Basemap%20Style#4-create-an-environment-variable-for-the-api-key), we can pull out other sensitive account data out of our code and into environment variables.
+
+Put your User ID and Style ID into env variables and call them within your application.
+
+Where We'll Make Changes
+ - lessons/env.shared
+ - ./src/App.js
 
 ### 2. Create a New Basemap Style
 
