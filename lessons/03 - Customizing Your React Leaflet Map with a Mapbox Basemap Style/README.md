@@ -90,10 +90,6 @@ Where We'll Make Changes
  - lessons/env.shared
  - ./src/App.js
 
-Resources
-- [egghead lesson](https://egghead.io/lessons/egghead-extra-env-variables)
-
-
 ### 2. Create a New Basemap Style
 
 Here's where you can go nuts!
