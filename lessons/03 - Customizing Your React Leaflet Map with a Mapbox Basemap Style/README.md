@@ -80,9 +80,19 @@ We'll update our Map compopnent that we set up in the previous lesson to use our
 
 ## Extra Credit
 
+Similar to [exercise 4](lessons/03%20-%20Customizing%20Your%20React%20Leaflet%20Map%20with%20a%20Mapbox%20Basemap%20Style#4-create-an-environment-variable-for-the-api-key), we can pull out other sensitive account data out of our code and into environment variables.
+
+Put your User ID and Style ID into env variables and call them within your application.
+
 ### 1. Extra Env Vars
 
-TODO
+Where We'll Make Changes
+ - lessons/env.shared
+ - ./src/App.js
+
+Resources
+- [egghead lesson](https://egghead.io/lessons/egghead-extra-env-variables)
+
 
 ### 2. Create a New Basemap Style
 
