@@ -56,6 +56,7 @@ To do this, we can use Create React Apps's built-in environment variable solutio
 
 #### Where We'll Make Changes
 * `lessons/.env.shared`
+* `/src/App.js`
 
 ### 5. Configuring a Mapbox Endpoint for our Map Style
 
@@ -87,8 +88,8 @@ Similar to [exercise 4](lessons/03%20-%20Customizing%20Your%20React%20Leaflet%20
 Put your User ID and Style ID into env variables and call them within your application.
 
 Where We'll Make Changes
- - lessons/env.shared
- - ./src/App.js
+ - `lessons/env.shared`
+ - `/src/App.js`
 
 ### 2. Create a New Basemap Style
 
