@@ -3,12 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "leaflet": "^1.6.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "leaflet": "^1.9.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
-    "react-leaflet": "^2.7.0",
-    "react-scripts": "3.4.1"
+    "react-leaflet": "^4.2.1",
+    "react-scripts": "^5.0.1"
   },
   "scripts": {
     "build": "react-scripts build",

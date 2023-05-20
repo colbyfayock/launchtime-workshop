@@ -1,5 +1,5 @@
 import React from 'react';
-import { Map, TileLayer } from 'react-leaflet';
+import { MapContainer, TileLayer } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import './assets/stylesheets/App.css';
 
@@ -8,7 +8,7 @@ import Layout from './components/Layout';
 function App() {
   return (
     <Layout>
-      <Map center={[38.907132, -77.036546]} zoom={12}>
+      <MapContainer center={[38.907132, -77.036546]} zoom={12}>
       { /**
          * @lesson-03-todo
          * Now that we created a new Map Style with Mapbox,
@@ -20,7 +20,7 @@ function App() {
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution="&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
         />
-      </Map>
+      </MapContainer>
     </Layout>
   );
 }
