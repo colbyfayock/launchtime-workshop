@@ -26,7 +26,6 @@ function App() {
        * for our basemap.
        */ }
       <MapContainer center={[38.907132, -77.036546]} zoom={12}>
-        <MapEffect />
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution="&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
