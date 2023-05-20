@@ -6,7 +6,7 @@
  */
 
 import React from 'react';
-import { Map, TileLayer } from 'react-leaflet';
+import { MapContainer, TileLayer } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import './assets/stylesheets/App.css';
 
@@ -27,7 +27,7 @@ function App() {
 
   return (
     <Layout>
-      <Map center={[38.907132, -77.036546]} zoom={12}>
+      <MapContainer center={[38.907132, -77.036546]} zoom={12}>
         <TileLayer
           url={`https://api.mapbox.com/styles/v1/${MAPBOX_USERID}/${MAPBOX_STYLEID}/tiles/256/{z}/{x}/{y}@2x?access_token=${MAPBOX_API_KEY}`}
           attribution="Map data &copy; <a href=&quot;https://www.openstreetmap.org/&quot;>OpenStreetMap</a> contributors, <a href=&quot;https://creativecommons.org/licenses/by-sa/2.0/&quot;>CC-BY-SA</a>, Imagery © <a href=&quot;https://www.mapbox.com/&quot;>Mapbox</a>"
@@ -38,7 +38,7 @@ function App() {
            * local attraction. How can we make use of the Leaflet
            * Marker and Popup component to point our location out?
            */ }
-      </Map>
+      </MapContainer>
     </Layout>
   );
 }
